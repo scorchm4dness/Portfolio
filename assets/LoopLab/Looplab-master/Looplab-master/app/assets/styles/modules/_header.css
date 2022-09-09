@@ -1,0 +1,21 @@
+.header{
+    background: url("../../assets/images/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 43.75rem;
+
+    &__home-inner{
+      padding-top: 9.375rem;
+    }
+    &--card{
+      opacity: 0.8;
+    }
+    &__icons{
+      color: #008ed6;
+      background: #fff;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+}

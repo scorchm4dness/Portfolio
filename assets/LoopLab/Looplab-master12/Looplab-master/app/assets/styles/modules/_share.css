@@ -1,0 +1,9 @@
+.share{
+  &__icon{
+
+    color: #FFFFFF;
+    background: #333333;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}

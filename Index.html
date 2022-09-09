@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+ <img src="assets/boy1.png" class="logo" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+ 
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+   <div class="containers w3-padding-large" id="main">
+    <div class="w3-conten w3-padding-0 w3-center" id="mains">
+      <img class="mySlides" src="assets/banner1.png" alt="banner1" style="width:110%">
+      <img class="mySlides" src="assets/banner2.jpg" alt="banner2" style="width:110%">
+      <img class="mySlides" src="assets/banner3.gif" alt="banner3" style="width:110%">
+      <img class="mySlides" src="https://i.imgur.com/ZtdhrUA.jpg" alt="banner4" style="width:110%; height:138.5px;">
+      <button class="w3-buttonss w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-buttonss w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      function plusDivs(n) {
+      showDivs(slideIndex += n);
+       }
+      function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1} if (n < 1) {slideIndex = x.length}for
+      (i = 0; i < x.length; i++) {x[i].style.display = "none";}
+      x[slideIndex-1].style.display = "block"; }
+     </script>
+     </div>
+     
+    <img src="assets/background.jpeg" alt="bg" style="width:110%; height:500px;">
+    <div class="centered w3-padding-0 w3-center"> 
+     <h1><b> Welcome to my Website!</b></h1>
+    </div>
+   </div>
+     <!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="container w3-padding-0 w3-center w3-black" id="home">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Good Day Everyone! I'm Cyrille John Eleazar and I'm 20 yeras old, I live in Barangay 175 Lirio Street Camarin Caloocan City. I'm currently studying at University of Caloocan City where I am a First year BSCS Student, Just like you I have lots of favorites and as you scroll down you will know every bits of me! Enjoy scrolling down!</p>
+    <br>
+    <h2 class="w3-text-light-grey">Early Life</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <video class="center" width="320" height="240" controls>
+      <source src="assets/video.mp4" type="video/mp4">
+    </video>
+    <br>
+    <pre>         
+        Eleazar was born on 13 June 2001 in Maligaya Park Subdivision, Quezon City. He is the first born child.
+      His parents, Noriel Eleazar and Renelyn Pasco, annulled when he was 12 years old so he and his siblings
+      lived with their father up until now. He attended Sto. Nino Elementary school, a primary school, and now he 
+      is a college student at UCC which are both located in his hometown of Caloocan City.
+
+        In his early childhood, they moved in their province located in Capul Northern Samar his parents noticed that
+      he has a talent in singing by which they forced him audition in their local province, but ended up losing.
+      There, he continued his studies and became a member of a choir. After spending a year in their province, 
+      His parents decided to go back here in Caloocan City where he continued his studies at Camarin High School.
+    </pre>
+
+     <!-- My family -->
+<div class="w3-padding-64 w3-content" id="team">
+  <h2 class="w3-text-light-grey">My Family</h2>
+  <hr style="width:200px" class="w3-opacity">
+  
+  <div class="w3-row"><br>
+  
+  <div class="w3-quarter">
+    <img src="assets/father.jpg" alt="Father" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Noriel C. Eleazar</h3>
+    <p>Father</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="assets/mama.jpg" alt="Mother" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Renelyn Eleazar</h3>
+    <p>Mother</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="assets/bro.jpg" alt="Brother" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Elian P. Eleazar</h3>
+    <p>Brother</p>
+  </div>
+  
+  <div class="w3-quarter">
+    <img src="assets/sister.jpg" alt="Sister" style="width:45%" class="w3-circle w3-hover-opacity">
+    <h3>Sophia P. Eleazar</h3>
+    <p>Sister</p>
+  </div>
+  
+  </div>
+      </div>
+      
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px; width:40%"><center>40%</center></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:30%"><center>30%</center></div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:25%"><center>25%</center></div>
+    </div><br>
+   <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"><a href="assets/resume.docx"> Download Resume </a></i>
+    </button>
+  
+     
+     
+  <!-- Grid for project tables -->
+  <h3 class="w3-padding-16 w3-text-light-grey">Hands-On Activities</h3>
+  <hr style="width:200px" class="w3-opacity">
+  <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Midterm</li>
+        <li class="w3-padding-16"><a href="assets/web/br-Eleazar.html">Line Break Sample</a></li>
+        <li class="w3-padding-16"><a href="assets/web/header-Eleazar.html">Header Sample</a></li>
+        <li class="w3-padding-16"><a href="assets/web/otherFormatting-Eleazar.html">Other Formatting </a></li>
+        <li class="w3-padding-16"><a href="assets/web/pre-Eleazar.html">Pre-formatted Text</a></li>
+        <li class="w3-padding-16"><a href="assets/web/handsOnAssignment1-Eleazar.html"> Hands On</a></li>
+        <li class="w3-padding-16"><a href="assets/web/orderedList_Eleazar.html">Ordered List</a></li>
+        <li class="w3-padding-16"><a href="assets/web/UnorderedList_Eleazar.html">Unordered List</a></li>
+        <li class="w3-padding-16"><a href="assets/web/LoadingImage_Eleazar.html">Loading Image</a></li>
+        <li class="w3-padding-16"><a href="assets/web/horizontalRule-Eleazar.html">Horizontal Rule</a></li>
+
+
+      </ul>
+    </div>
+
+    <div class="w3-half">
+      <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Finals</li>
+        <li class="w3-padding-16"><a href="assets/web/HTMLHyperlinks_Eleazar.html">HTML Hyperlinks </a></li>
+        <li class="w3-padding-16"><a href="assets/web/AnimatedImage_Eleazar.html">Animated Image </a></li>
+        <li class="w3-padding-16"><a href="assets/web/Sofa.html">Sofa</a></li>
+        <li class="w3-padding-16"><a href="assets/web/Table_Eleazar.html">Table </a></li>
+        <li class="w3-padding-16"><a href="assets/LoopLab/index.html">LoopLab Sample </a></li>
+        <li class="w3-padding-16"><a href="assets/web/TableSpan2_Eleazar.html"> Table Spanning </a></li>
+        <li class="w3-padding-16"><a href="assets/Instagram/index.html">Instagram Clone </a></li>
+        <li class="w3-padding-16"><a href="assets/tailwind/index..html">Tailwind </a></li>
+        <li class="w3-padding-16"><a href="assets/vue/Index.html">Vue </a></li>
+      </ul>
+    </div>
+  <!-- End Grid/Pricing tables -->
+  </div>
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Gallery</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-center" id="art">
+    <h4>Travels</h4>
+    <div class="w3-quarter">
+      <img src="assets/trvl_1.jpg" alt="Travel1" style="width:100%">
+    </div>
+    <div class="w3-quarter">
+      <img src="assets/trvl_2.jpg" alt="Travel2" style="width:100%">
+    </div>
+    <div class="w3-quarter">
+      <img src="assets/trvl_3.jpg" alt="Travel3" style="height:165px; width:100%;">
+    </div>
+    <div class="w3-quarter">
+      <img src="assets/trvl_4.jpg" alt="Travel4" style="height:165px; width:100%;">
+    </div>
+
+  <!-- Second Grid for photos -->
+  <div class="w3-row-padding w3-center" id="art">
+    <div class="w3-quarter">
+      <img src="assets/trvl_5.jpg" alt="Travel5" style="width:100%">
+    </div>
+    <div class="w3-quarter">
+      <img src="assets/trvl_6.jpg" alt="Travel6" style="width:100%; height:165px;">
+    </div>
+    <div class="w3-quarter">
+      <img src="assets/trvl_7.jpg" alt="Travel7" style="height:165px; width:100%;">
+    </div>
+    <div class="w3-quarter">
+      <img src="assets/trvl_8.jpg" alt="Travel8" style="height:165px; width:100%;">
+    </div>
+
+    <!--Third Grid for photos-->
+  <div class="w3-main w3-content w3-padding" style="max-width:1200px;">
+    <div class="w3-row-padding w3-center" id="art">
+      <h4>My Art</h4>
+      <div class="w3-quarter">
+        <img src="assets/Draft_1.png" alt="Sandwich" style="width:100%; height:210px;">
+      </div>
+      <div class="w3-quarter">
+        <img src="assets/Draft_2.png" alt="Steak" style="width:100%">
+      </div>
+      <div class="w3-quarter">
+        <img src="assets/Drafts_4.png" alt="Cherries" style="width:100%">
+      </div>
+      <div class="w3-quarter">
+        <img src="assets/Draft_5.png" alt="Pasta and Wine" style="width:100%">
+      </div>
+    </div>
+  </div>
+     </div> 
+  <!-- End Portfolio Section -->
+  </div>
+  <video class="center" width="320" height="240" controls>
+    <source src="assets/my saturday.mp4" type="video/mp4">
+  </video>
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Camarin Caloocan City</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +639777936876</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: eleazar.cyrillejohn.bscs2021@gmail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+  
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <!--add all information -->
+        <hr style="width:120%" class="w3-opacity">
+        <h3>Follow me on my Socials!</h3>
+        <ul class="socials">
+          <li><a href="https://www.facebook.com/cjhay1349"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.twitter.com/NyralleHoran"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.pinterest.ph/nyrallehoran"><i class="fa fa-pinterest-p"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UC2JvIfZqXkoZVe-N04PRgeA"><i class="fa fa-youtube"></i></a></li>
+          <li><a href="https://www.linkedin.com/mwlite/in/eleazar-cyrille-john"><i class="fa fa-linkedin-square"></i></a></li>
+       </ul>
+    </div>
+   
+    <div class="footer-bottom">
+      <!-- add all information -->
+      
+      <p>copyright &copy;2022 <a href="#">nyrallehoran</a>  </p>
+   </div>
+    </footer>
+  <!-- End footer -->
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
